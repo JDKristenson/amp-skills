@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 1040" role="img" aria-labelledby="title desc">
+<title id="title">Amp skills provenance and browser privacy boundaries</title>
+<desc id="desc">Static source-derived diagram. Inherited collection and two local CI commits; standalone client, HTTP API, Chromium CDP, sensitive profile, and optional extension relay. Runtime not run.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="currentColor"/></marker></defs>
+<g fill="none" stroke="currentColor" stroke-width="1.5">
+<rect x="30" y="160" width="440" height="128" rx="8"/>
+<rect x="550" y="160" width="440" height="128" rx="8"/>
+<path d="M475,221 l68,0" marker-end="url(#arrow)"/>
+<rect x="30" y="502" width="270" height="100" rx="8"/>
+<rect x="370" y="502" width="270" height="100" rx="8"/>
+<rect x="710" y="502" width="280" height="100" rx="8"/>
+<path d="M305,551 l60,0" marker-end="url(#arrow)"/>
+<path d="M645,551 l60,0" marker-end="url(#arrow)"/>
+<path d="M164,609 l0,45" marker-end="url(#arrow)"/>
+<path d="M164,654 l676,0" marker-end="url(#arrow)"/>
+<path d="M840,654 l0,-45" marker-end="url(#arrow)"/>
+<rect x="710" y="695" width="280" height="102" rx="8"/>
+<path d="M850,607 l0,78" marker-end="url(#arrow)"/>
+<rect x="30" y="695" width="610" height="102" rx="8"/>
+</g><g fill="currentColor" font-family="Arial, sans-serif">
+<text x="30" y="52" font-size="30">
+<tspan x="30" dy="0">Amp skills | provenance + browser boundaries</tspan>
+</text>
+<text x="30" y="86" font-size="18">
+<tspan x="30" dy="0">Source baseline: main @ 4148cf86953e | 2026-11-12 UTC</tspan>
+</text>
+<text x="30" y="132" font-size="21">
+<tspan x="30" dy="0">01  Source relationships — not a blanket license or sole-authorship claim</tspan>
+</text>
+<text x="48" y="194" font-size="19">
+<tspan x="48" dy="0">INHERITED COLLECTION</tspan>
+<tspan x="48" dy="23.75">Ryan Carson: 7 baseline commits</tspan>
+<tspan x="48" dy="23.75">Provider upstream: JokerRun/amp-skills</tspan>
+<tspan x="48" dy="23.75">8 skill definitions + browser subsystem</tspan>
+</text>
+<text x="568" y="194" font-size="19">
+<tspan x="568" dy="0">LOCAL BASELINE DELTA</tspan>
+<tspan x="568" dy="23.75">JDKristenson: 2 CI commits</tspan>
+<tspan x="568" dy="23.75">2026-03-30 UTC</tspan>
+<tspan x="568" dy="23.75">41-line workflow; no payload changes</tspan>
+</text>
+<text x="30" y="330" font-size="19">
+<tspan x="30" dy="0">Credits/references: camhahu/browser · SawyerHood/dev-browser</tspan>
+<tspan x="30" dy="23.75">browser-use · Every.to. Exact component versions not established.</tspan>
+</text>
+<text x="30" y="392" font-size="19">
+<tspan x="30" dy="0">Rights boundary: earlier MIT label conflicts with missing license text.</tspan>
+<tspan x="30" dy="23.75">PDF/DOCX retain Proprietary notices; frontend terms file is also absent.</tspan>
+</text>
+<text x="30" y="472" font-size="21">
+<tspan x="30" dy="0">02  Standalone control paths — inferred from source, NOT RUN</tspan>
+</text>
+<text x="48" y="536" font-size="19">
+<tspan x="48" dy="0">CLIENT SCRIPTS</tspan>
+<tspan x="48" dy="23.75">TypeScript + Playwright</tspan>
+<tspan x="48" dy="23.75">Named pages / snapshots</tspan>
+</text>
+<text x="388" y="536" font-size="19">
+<tspan x="388" dy="0">HTTP PAGE API :9222</tspan>
+<tspan x="388" dy="23.75">Registry + CDP discovery</tspan>
+<tspan x="388" dy="23.75">No route auth observed</tspan>
+</text>
+<text x="728" y="536" font-size="19">
+<tspan x="728" dy="0">CHROMIUM CDP :9223</tspan>
+<tspan x="728" dy="23.75">Persistent browser context</tspan>
+<tspan x="728" dy="23.75">Page interaction / content</tspan>
+</text>
+<text x="270" y="637" font-size="17">
+<tspan x="270" dy="0">Playwright connects over CDP</tspan>
+</text>
+<text x="728" y="729" font-size="19">
+<tspan x="728" dy="0">SENSITIVE LOCAL STATE</tspan>
+<tspan x="728" dy="23.75">profiles/browser-data</tspan>
+<tspan x="728" dy="23.75">Cookies, storage, cache</tspan>
+</text>
+<text x="48" y="729" font-size="19">
+<tspan x="48" dy="0">OPTIONAL, SEPARATE MODE</tspan>
+<tspan x="48" dy="23.75">Client → relay :9222 → external extension → existing Chrome</tspan>
+<tspan x="48" dy="23.75">Not bundled or runtime-verified; explicit opt-in only</tspan>
+</text>
+<text x="30" y="854" font-size="19">
+<tspan x="30" dy="0">PRIVACY / NETWORK BOUNDARY</tspan>
+<tspan x="30" dy="23.75">Do not expose API/CDP to untrusted networks. Isolate ports and profiles.</tspan>
+<tspan x="30" dy="23.75">Keep login state, page extracts, screenshots and endpoint details private.</tspan>
+<tspan x="30" dy="23.75">Startup may install packages/browser and kill a process on port 9223.</tspan>
+</text>
+<text x="30" y="979" font-size="17">
+<tspan x="30" dy="0">Documentation cleanup: AI-assisted by Reason. Inherited authorship unchanged.</tspan>
+<tspan x="30" dy="21.25">Editable scene: provenance-browser.excalidraw | References: provenance.md</tspan>
+</text>
+</g></svg>
